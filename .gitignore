@@ -1,3 +1,6 @@
+# Project
+projects/*
+
 # Logs
 logs
 *.log
