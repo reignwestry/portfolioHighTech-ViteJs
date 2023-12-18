@@ -84,45 +84,7 @@
         }
     }
 
-    .projectData{
-        width: 100%;
-        height: 100%;
-        display:none;
-        font-size: 1.5rem;
 
-        .projectBasicData{
-            // background-color: white;
-            height: 25%;
-
-            h2{
-                font-weight: 700;
-                height: 50%;
-                margin: 0;
-            }
-        }
-        .projectTechData{
-            margin: 0;
-            // background-color: blue;
-            background-color: rgba(0,0,0,1);
-            height: 50%;
-            margin-bottom: 0;
-
-            .gLink{
-                &:hover{
-                    color: variables.$Fifth-color;
-                }
-            }
-        }
-        .techTypes{
-            font-size: 1.2rem;
-            color: variables.$Third-color;
-
-            h4{
-                font-weight: 700;
-            }
-        }
-
-    }
 
 }
 
