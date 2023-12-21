@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from './pages/home';
+import HomePage from './pages/home';
 import AboutPage from './pages/about'
 import GalleryPage from './pages/gallery'
 import ContactPage from './pages/contact'
@@ -14,7 +14,7 @@ import './scss/App.scss';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />
+    element: <HomePage />
   },
   {
     path: "/about",

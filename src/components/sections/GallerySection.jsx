@@ -1,6 +1,5 @@
 import ShowcaseBackgroundImg from "./../../assets/imgs/backgrounds/showcaseBackgroundImg.png";
-
-import ProjectContainer from "./../projectContainer";
+import GalleryRow from './GalleryRow';
 
 // import dumbyImg from "./../../assets/imgs/showcase/dumby-img.jpg";
 
@@ -17,34 +16,22 @@ import ProjectContainer from "./../projectContainer";
 
 //todo finish mobile responsive
 //todo convert projectRow to a map function
-function ShowcaseSection() {
+export default function GallerySection() {
   return (
     <div
-      className="showcaseSection"
+      className="gallerySection"
       style={{
         backgroundImage: `url(${ShowcaseBackgroundImg})`,
       }}
     >
       <div className="sectionHeader">
-        <h1>Showcase</h1>
+        <h1>Gallery</h1>
       </div>
-      <span>Here is a showcase of my best and latest projects</span>
+      {/* <span>Here is a showcase of my best and latest projects</span> */}
       <div className="showcaseGallery">
-        <div className="row">
-          <ProjectContainer />
-          <ProjectContainer />
-          <ProjectContainer />
-          <ProjectContainer />
-        </div>
-        <div className="row">
-          <ProjectContainer />
-          <ProjectContainer />
-          <ProjectContainer />
-          <ProjectContainer />
-        </div>
+        <GalleryRow />
+        <GalleryRow />
       </div>
     </div>
   );
 }
-
-export default ShowcaseSection;

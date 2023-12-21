@@ -1,6 +1,6 @@
 
 import HeroSection from "../components/sections/HeroSection";
-import ShowcaseSection from "../components/sections/ShowcaseSection";
+import GallerySection from "../components/sections/GallerySection";
 import AboutSection from "../components/sections/AboutSection";
 import FooterSection from "../components/sections/FooterSection";
 
@@ -9,7 +9,7 @@ export default function Resume() {
     <div>
       <HeroSection />
       <h1>Gallery Page</h1>
-      <ShowcaseSection />
+      <GallerySection />
       <AboutSection />
       <FooterSection />
     </div>

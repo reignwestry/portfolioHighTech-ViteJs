@@ -1,4 +1,5 @@
 // import { faBorderNone } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom';
 
 import { useState } from "react";
 
@@ -31,29 +32,29 @@ export default function Nav() {
       <div className="navMenu">
         <ul>
           <li>
-            <a className="navLink" href="/">
+            <Link className="navLink" to="/">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="navLink" href="/gallery">
+            <Link className="navLink" to="/gallery">
               Gallery
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="navLink" href="/about">
+            <Link className="navLink" to="/about">
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="navLink" href="/resume">
+            <Link className="navLink" to="/resume">
               Resume
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="navLink" href="/contact">
+            <Link className="navLink" to="/contact">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
