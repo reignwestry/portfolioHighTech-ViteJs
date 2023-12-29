@@ -1,35 +1,124 @@
-.gallerySection{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+@use "./../components/variables";
+@use './../components/mixins';
+
+
+.gallerySection {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+.galleryBlock {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 98vw;
+  border: 1px dashed red;
+  max-height: 60vh;
+  background: white;
+  margin: 2vh 0;
+  overflow-x: hidden;
+  justify-content: space-around;
+}
+
+// Gallery Project
+.galleryProject {
+  background: pink;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 22vw;
+  border: 1px dashed pink;
+  height: 25vh;
+  margin: 2vh 0;
+}
+
+.galleryProjectBox {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 1px dashed yellow;
+  border-radius: 10px;
+  opacity: 0.7;
+  display: hidden;
+}
+
+.projectOverlay {
+  display: hidden;
+  width: 100%;
+  height: 100%;
+
+  &:hover {
+     @include mixins.buttonOutlineAnimation;
+    background-image: url("./../../assets/imgs/showcase/gold-foil.png");
+    background-color: rgba(0, 0, 0, 1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .projectData {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      opacity: 1;
+      color: variables.$Primary-color;
+    }
+  }
+}
+
+
+.projectData {
+  width: 100%;
+  height: 100%;
+  display: none;
+  font-size: 1.5rem;
+  opacity: 11;
+
+  .projectBasicData {
+    height: 25%;
+
+
+    h2 {
+      color: variables.$Fourth-color;
+      font-weight: 700;
+      height: 50%;
+      margin: 0;
+    }
+    h3 {
+      color: variables.$Fifth-color;
+      margin: 0, auto;
+      width: 100%;
+      height: 5%;
+      text-align: center;
+    }
+  }
+  .projectTechData {
     margin: 0;
-    padding: 0;
-    width: 100vw;
+    height: 50%;
+    margin-bottom: 0;
+
+    h4 {
+      color: variables.$Fourth-color;
+      font-weight: 700;
+    }
+
+    .gLink {
+        border: 1px dashed white;
+        width: 100%;
+      text-align: center;
+      &:hover {
+        color: variables.$Fifth-color;
+      }
+    }
+  }
+  .techTypes {
+    font-size: 1.2rem;
+    color: variables.$Third-color;
+  }
 }
-
-.galleryRow{
-    background: white;
-    border: 1px dashed yellow;
-    display: flex;
-    flex-direction: row;
-    height: 25vh;
-    width: 98vw;
-}
-
-//ProjectBox
-// .projectContainer{
-//     background: blue;
-//     border: 1px dashed red;
-//     height: 100%;
-//     margin: 0;
-//     padding: 0;
-//     width: 25vw;
-
-
-//     .projectBox{
-//         height: 100%;
-//         width: 100%;
-//         margin: 0;
-//     }
-// }

@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // import ShowcaseBackgroundImg from './../assets/imgs/backgrounds/showcaseBackgroundImg.png';
 import dumbyImg from "./../assets/imgs/showcase/dumby-img.jpg";
@@ -20,11 +20,11 @@ export default function ProjectContainer() {
   };
 
   return (
-    <Link to={project.webAddress}>
-      <div
-        className="projectBoxShadow"
-        style={{ backgroundImage: `url(${dumbyImg})` }}
-      >
+    <div
+      className="projectBoxShadow"
+      style={{ backgroundImage: `url(${dumbyImg})` }}
+    >
+      <Link to={project.webAddress}>
         <div className="projectBox">
           <div className="projectData">
             <div className="projectBasicData">
@@ -40,9 +40,7 @@ export default function ProjectContainer() {
             </div>
           </div>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 }
-
-

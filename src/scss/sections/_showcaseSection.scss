@@ -35,16 +35,17 @@
   .showcaseGallery {
     height: 60vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: flex-start;
+    flex-wrap: wrap;
     background-color: variables.$Secondary-color;
 
-    .row {
-      display: flex;
-      flex-direction: row;
-      height: 50%;
-      margin: 0;
-      padding: 0;
-    }
+    // .row {
+    //   display: flex;
+    //   flex-direction: row;
+    //   height: 40vh;
+    //   margin: 0;
+    //   padding: 0;
+    // }
   }
 }
 

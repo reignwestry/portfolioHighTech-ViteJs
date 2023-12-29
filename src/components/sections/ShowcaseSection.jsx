@@ -30,18 +30,16 @@ function ShowcaseSection() {
       </div>
       <span>Here is a showcase of my best and latest projects</span>
       <div className="showcaseGallery">
-        <div className="row">
+
           <ProjectContainer />
           <ProjectContainer />
           <ProjectContainer />
           <ProjectContainer />
-        </div>
-        <div className="row">
           <ProjectContainer />
           <ProjectContainer />
           <ProjectContainer />
           <ProjectContainer />
-        </div>
+
       </div>
     </div>
   );
