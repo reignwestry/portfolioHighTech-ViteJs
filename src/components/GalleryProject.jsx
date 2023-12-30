@@ -1,7 +1,8 @@
 import 'react';
 import { Link } from "react-router-dom";
 
-// import GoldFoil from "./../assets/imgs/showcase/gold-foil.png";
+
+import GoldFoil from "./../assets/imgs/showcase/gold-foil.png";
 
 //todo HOVER COVER
 //todo convert all project data to project.json and pass as a prop

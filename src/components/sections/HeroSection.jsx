@@ -1,5 +1,6 @@
 import Header from './../Header';
 import HeroBackground from "./../../assets/imgs/backgrounds/heroBackgroundImage.png";
+import { Link } from 'react-router-dom';
 
 export default function HeroSection() {
   return (
@@ -17,13 +18,13 @@ export default function HeroSection() {
           <span className="keywordTwo">Full-Stack</span> Developer
         </p>
 
-        <a href="/contact" >
+        <Link to="/contact" >
           <button className="contactBtn" type="button">
-            <div>
+
               <div className="contactBtnText">Contact Me Now</div>
-            </div>
+
           </button>
-        </a>
+        </Link>
       </div>
     </div>
   );

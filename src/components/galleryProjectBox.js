@@ -1,5 +1,5 @@
 //GalleryProjectBox
-import Link from "next/link";
+import Link from "react-router-dom";
 // import ShowcaseBackgroundImg from "./../assets/imgs/backgrounds/showcaseBackgroundImg.png";
 import dumbyImg from "./../imgs/showcase/dumby-img.jpg";
 export default function GalleryProjectBox() {
