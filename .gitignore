@@ -1,6 +1,6 @@
 # Project
 src/pages/projects/*
-projects/*
+public/projects/*
 db/*
 
 # Logs
